@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.body-div{
+	min-height: 500px;
+	background: #999;
+}
+.header-div{
+	min-height: 100px;
+	background: #80ffff;
+}
+.footer-div{
+	min-height: 100px;
+	background: #333;
+}
