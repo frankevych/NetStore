@@ -22,6 +22,10 @@ public class RoleServImp implements RoleService{
 		roleDAOImp.insert(new Role(roleName));
 	}
 
+	public Role findById(int id) {
+		return roleDAOImp.findById(id);
+	}
+	
 	public List<Role> getAllRoles() {
 		return roleDAOImp.getAllRoles();
 	}

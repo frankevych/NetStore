@@ -21,6 +21,12 @@ public class UserServImp implements UserService{
 		User user = new User(firstName, secondName, email, phoneNumber);
 		userDAOImp.insert(user);
 	}
+	
+
+	@Transactional
+	public void insert(User user) {
+		userDAOImp.insert(user);
+	}
 
 	public List<User> getAllUsers() {
 		return userDAOImp.getAllUsers();
